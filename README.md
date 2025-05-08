@@ -62,6 +62,7 @@ This project is a complete Splunk-based anomaly detection solution that identifi
 
 ##  Author
 **Majaro Hassan**
+
 Cybersecurity Enthusiast | Certified Information Security Consultant (CISC) | SOC & SIEM Analyst
 
 ---
