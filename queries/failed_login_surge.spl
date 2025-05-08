@@ -1,0 +1,3 @@
+index=demo_data sourcetype=dummy_logs status=error
+| stats count by email, ip_address
+| where count > 5

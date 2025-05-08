@@ -1,0 +1,21 @@
+<dashboard>
+  <label>Log Anomaly Overview</label>
+  <row>
+    <panel>
+      <chart>
+        <title>Failed Logins by IP</title>
+        <search>
+          <query>index=demo_data sourcetype=dummy_logs status=error | stats count by ip_address</query>
+        </search>
+      </chart>
+    </panel>
+    <panel>
+      <chart>
+        <title>Login Events by Hour</title>
+        <search>
+          <query>index=demo_data sourcetype=dummy_logs | eval hour=strftime(_time, "%H") | stats count by hour</query>
+        </search>
+      </chart>
+    </panel>
+  </row>
+</dashboard>

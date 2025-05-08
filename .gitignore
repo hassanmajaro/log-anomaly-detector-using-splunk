@@ -1,0 +1,26 @@
+# Ignore Python cache and logs (if used)
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore environment files (if you ever use venv or pipenv)
+.env
+.venv/
+env/
+venv/
+Pipfile.lock
+
+# Ignore Jupyter notebooks checkpoints (optional)
+.ipynb_checkpoints/
+
+# Ignore temporary files or backups
+*.bak
+*.swp
+*~
+
+# Ignore ZIPs or exports
+*.zip

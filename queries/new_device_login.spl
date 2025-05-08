@@ -1,0 +1,4 @@
+index=demo_data sourcetype=dummy_logs
+| stats latest(_time) as last_seen by email, ip_address
+| lookup known_user_ips email, ip_address OUTPUT user_exists
+| where isnull(user_exists)

@@ -1,0 +1,4 @@
+index=demo_data sourcetype=dummy_logs
+| eval hour=strftime(_time, "%H")
+| lookup user_login_baseline user OUTPUT expected_hour
+| where hour != expected_hour
